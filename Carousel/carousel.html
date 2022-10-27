@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/12850dccb9.js" crossorigin="anonymous"></script>
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Carousel</title>
+</head>
+<body class="grey darken-3">
+    <!--Carousel-->
+    <h1 class="grey-text text-lighten-1 center">Foods</h1>
+    <div class="carousel">
+        <a href="#one" class="carousel-item">
+            <img src="../Images/food1.jpg" alt="">
+        </a>
+
+        <a href="#two" class="carousel-item">
+            <img src="../Images/food2.jpg" alt="">
+        </a>
+
+        <a href="#three" class="carousel-item">
+            <img src="../Images/food3.jpg" alt="">
+        </a>
+
+        <a href="#four" class="carousel-item">
+            <img src="../Images/food4.jpg" alt="">
+        </a>
+    </div>
+
+    <!-- Full width slider -->
+    <div class="carousel carousel-slider">
+        <a href="#one" class="carousel-item">
+            <img src="../Images/food1.jpg" alt="">
+        </a>
+
+        <a href="#two" class="carousel-item">
+            <img src="../Images/food2.jpg" alt="">
+        </a>
+
+        <a href="#three" class="carousel-item">
+            <img src="../Images/food3.jpg" alt="">
+        </a>
+
+        <a href="#four" class="carousel-item">
+            <img src="../Images/food4.jpg" alt="">
+        </a>
+    </div>
+    
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+        $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+     </script>
+
+     <script>
+        $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+     </script>
+</body>
+</html>

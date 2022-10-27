@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/12850dccb9.js" crossorigin="anonymous"></script>
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Buttons and Icons</title>
+</head>
+<body class="grey lighten-4">
+    <div class="container">
+        <h1 class="blue-text text-lighten-3">
+            Buttons and Icons
+        </h1>
+        <button class="btn">Read More</button>
+        <a href="#" class="btn purple">Read More</a>
+        <br></br>
+        <button class="btn green waves-effect waves-red">Read More</button>
+        <a href="#" class="btn white waves-effect waves-green grey-text">Read More</a>
+
+        <!--Buttons with material icons-->
+        <a href="" class="btn blue lighten-3 blue-text text-darken-1"> 
+            <i class="material-icons left">card_giftcard</i>
+            Gift
+        </a>
+
+        <a href="" class="btn-large  blue lighten-3 blue-text text-darken-1"> 
+            <i class="material-icons left">card_giftcard</i>
+            Gift
+        </a>
+
+        <!--Floating Action Button-->
+        <div class="fixed-action-btn">
+            <button class="btn-floating btn-large pulse blue waves-effect waves-purple">
+                <i class="material-icons">favorite</i>
+            </button>
+            <ul>
+                <li>
+                    <a href="" class="btn-floating green lighten-1">
+                        <i class="material-icons">help</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="btn-floating purple lighten-3">
+                        <i class="material-icons">home</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="btn-floating yellow lighten-1">
+                        <i class="material-icons">mood</i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        
+    </div>
+    
+
+    
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <script>
+        $(document).ready(function(){
+          $('.fixed-action-btn').floatingActionButton();
+      });
+     </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="sidenav.css">
+    <title>Side Navigation</title>
+</head>
+<body class="grey lighten-5">
+    <nav class="blue darken-2">
+        <div class="container center width: 100%">
+            <div class="nav-wrapper">
+                <a href="sidenav.html" class="brand">Faceblook</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>   
+            </div>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../Images/img1.jfif">
+                </div>
+                <a href="#user"><img class="circle" src="../Images/k1.jpg"></a>
+                <a href="#name"><span class="white-text name">Kai Bautista</span></a>
+                <a href="#email"><span class="white-text email">kai.b@mail.com</span></a>
+            </div> 
+        </li>
+        <li>
+            <a class="subheader">Profile</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">dashboard</i>Dashboard</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">palette</i>Theme</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">Preferences</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">notifications</i>Notification</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">security</i>Privacy</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">Account</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">settings</i>Account settings</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">priority_high</i>Help</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">error</i>Report Technical Problem</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="waves-effect" href="#!">Log out</a>
+        </li>
+    </ul>
+
+    <!--End of Side & Top Nav-->
+    <section class="section-stats">
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card-panel center">
+                    <i class="material-icons medium blue-text">account_circle</i>
+                    <h6 class="grey-text">Profile Impressions</h6>
+                    <h4 class="count grey-text text-darken-2">930</h4>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel center">
+                    <i class="material-icons medium blue-text">person_add</i>
+                    <h6 class="grey-text">Friend Request</h6>
+                    <h4 class="count grey-text text-darken-2">413</h4>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel center">
+                    <i class="material-icons medium blue-text">group</i>
+                    <h6 class="grey-text">Followers</h6>
+                    <h4 class="count grey-text text-darken-2">4,917</h4>
+
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel center">
+                    <i class="material-icons medium blue-text">favorite</i>
+                    <h6 class="grey-text">Likes</h6>
+                    <h4 class="count grey-text text-darken-2">3,079</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Chart Section-->
+    <section class="section chart-section blue darken-2">
+        <div class="row">
+            <div class="col s6 push-s3 ">
+                <div id="chartContainer" style="height: 250px; width: 100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./chart.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 800,
+                outDuration: 600
+            });
+        });
+    </script>
+     
+    
+</body>
+</html>
